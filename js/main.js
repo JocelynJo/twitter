@@ -61,7 +61,7 @@ function agregarTarea(){
 	}	
 	
 }
-
+//elimina tarea
 function eliminarTarea(){
 	var borrar=document.getElementById("borrar");
 	var papaBorar=borrar.parentNode;

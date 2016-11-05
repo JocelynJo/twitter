@@ -42,7 +42,7 @@ function agregarTarea(){
 		btoBa.setAttribute("id","borrar")
 		btoBa.classList.add("btn","btn-default","col-md-1","col-sm-1","col-xs-1","text-center");
 		btoBa.appendChild(basura);
-		//hr
+		
 	
 		//contiene es papa de textarea
 		contiene.appendChild(textoTarea);
@@ -56,7 +56,14 @@ function agregarTarea(){
 		div1.appendChild(btoBa);
 	
 		nodPapa.appendChild(div1);
-		return true;
+		
+		btoCor.addEventListener('click', function(){
+			corazon.classList.toggle('rojo');
+		})
+
+		tareaCheck.addEventListener('click',function(){
+			contiene.classList.toggle('tachar');
+		})
 		
 	}	
 	
@@ -69,3 +76,4 @@ function eliminarTarea(){
 	papaBorar.parentNode.removeChild(papaBorar);
 
 }
+
